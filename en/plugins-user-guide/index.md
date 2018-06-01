@@ -1,13 +1,46 @@
 % Plugins User Guide
-## Overview
 
-Most of what Rundeck does is via one of its plugins. 
-Several [plugin types](plugin-types.html) exist
-to [execute commands on nodes](node-execution-plugins.html), 
-perform a step in a workflow, 
-send a notification about job status, gather
-[information about the hosts](resource-model-source-plugins.html) 
-in your network, copy a file to a remote
-server, store and stream logs, or talk to a user directory.
+Rundeck plugins are categorized by type:
 
-See the [Plugin Developer Guide](../developer/index.html) if you are interested in creating one of your own plugins.
+* Node
+* Job
+* Command
+* Notification
+* Execution
+* Internal
+
+## Node
+
+Node plugins define which nodes are available to run jobs and how that configuration is formatted.
+
+See [Node Plugins](node/index.html).
+
+## Job
+
+Job plugins control how jobs are defined and exported.
+
+See [Job Plugins](job/index.html).
+
+## Command
+
+Command plugins determine what jobs will do.
+
+See [Command Plugins](command/index.html).
+
+## Notification
+
+Notification plugins control how jobs provide feedback about their executions to external sources.
+
+See [Notification Plugins](notification/index.html).
+
+## Execution
+
+Execution plugins determine how jobs are executed on their target nodes.
+
+See [Execution Plugins](execution/index.html).
+
+## Internal
+
+Internal plugins control the internals of Rundeck.
+
+See [Internal Plugins](internal/index.html).
